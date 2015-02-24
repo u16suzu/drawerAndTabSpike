@@ -35,7 +35,7 @@
         MMDrawerController *destinationViewController = (MMDrawerController *) segue.destinationViewController;
         
         // Instantitate and set the center view controller.
-        UIViewController *centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FIRST_TOP_VIEW_CONTROLLER"];
+        UIViewController *centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FIRST_NAVIGATION"];
         [destinationViewController setCenterViewController:centerViewController];
         
         // Instantiate and set the left drawer controller.
