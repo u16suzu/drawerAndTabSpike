@@ -10,6 +10,7 @@
 #import <UIViewController+MMDrawerController.h>
 
 @interface SideTableViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSInteger currentIndex;
 @end
 
@@ -17,12 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.delegate = (id)self;
+    self.tableView.dataSource = (id)self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,6 +28,28 @@
 }
 
 #pragma mark - Table view
+
+
+
+#pragma mark - Table view delegate methods
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellIdentifier = @"ResultCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"cell %d", indexPath.row];
+    
+    return cell;
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (self.currentIndex == indexPath.row) {
