@@ -223,7 +223,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NGZ-2p-Uu0">
             <objects>
-                <navigationController storyboardIdentifier="SECOND_TOP_VIEW_CONTROLLER" automaticallyAdjustsScrollViewInsets="NO" id="apl-Nb-Rhp" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SECOND_NAVIGATION" automaticallyAdjustsScrollViewInsets="NO" id="apl-Nb-Rhp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wqf-7r-64B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
