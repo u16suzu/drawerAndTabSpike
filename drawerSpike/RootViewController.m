@@ -6,14 +6,14 @@
 //  Copyright (c) 2015年 IGNIS LTD. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RootViewController.h"
 #import <MMDrawerController.h>
 
-@interface ViewController ()
+@interface RootViewController ()
 
 @end
 
-@implementation ViewController
+@implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

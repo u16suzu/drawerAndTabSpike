@@ -12,7 +12,7 @@
 		643027DE1A9C55F500A91250 /* SideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643027DD1A9C55F500A91250 /* SideTableViewController.m */; };
 		64F16B4A1A9C41CE002EA849 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F16B491A9C41CE002EA849 /* main.m */; };
 		64F16B4D1A9C41CE002EA849 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F16B4C1A9C41CE002EA849 /* AppDelegate.m */; };
-		64F16B501A9C41CE002EA849 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F16B4F1A9C41CE002EA849 /* ViewController.m */; };
+		64F16B501A9C41CE002EA849 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F16B4F1A9C41CE002EA849 /* RootViewController.m */; };
 		64F16B531A9C41CE002EA849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F16B511A9C41CE002EA849 /* Main.storyboard */; };
 		64F16B551A9C41CE002EA849 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F16B541A9C41CE002EA849 /* Images.xcassets */; };
 		64F16B581A9C41CE002EA849 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F16B561A9C41CE002EA849 /* LaunchScreen.xib */; };
@@ -43,8 +43,8 @@
 		64F16B491A9C41CE002EA849 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		64F16B4B1A9C41CE002EA849 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64F16B4C1A9C41CE002EA849 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		64F16B4E1A9C41CE002EA849 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		64F16B4F1A9C41CE002EA849 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		64F16B4E1A9C41CE002EA849 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		64F16B4F1A9C41CE002EA849 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		64F16B521A9C41CE002EA849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64F16B541A9C41CE002EA849 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		64F16B571A9C41CE002EA849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -85,6 +85,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		643028191A9C6F9000A91250 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				643027D61A9C510C00A91250 /* FirstViewController.h */,
+				643027D71A9C510C00A91250 /* FirstViewController.m */,
+			);
+			name = First;
+			sourceTree = "<group>";
+		};
+		6430281A1A9C6F9C00A91250 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				643027D91A9C511D00A91250 /* SecondViewController.h */,
+				643027DA1A9C511D00A91250 /* SecondViewController.m */,
+			);
+			name = Second;
+			sourceTree = "<group>";
+		};
+		6430281B1A9C6FB600A91250 /* Side */ = {
+			isa = PBXGroup;
+			children = (
+				643027DC1A9C55F500A91250 /* SideTableViewController.h */,
+				643027DD1A9C55F500A91250 /* SideTableViewController.m */,
+			);
+			name = Side;
+			sourceTree = "<group>";
+		};
+		6430281C1A9C6FBD00A91250 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				64F16B6D1A9C445A002EA849 /* SpikeDrawerController.h */,
+				64F16B6E1A9C445A002EA849 /* SpikeDrawerController.m */,
+				6430281B1A9C6FB600A91250 /* Side */,
+			);
+			name = Drawer;
+			sourceTree = "<group>";
+		};
+		6430281D1A9C6FC900A91250 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				64F16B4E1A9C41CE002EA849 /* RootViewController.h */,
+				64F16B4F1A9C41CE002EA849 /* RootViewController.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
 		64F16B3B1A9C41CE002EA849 = {
 			isa = PBXGroup;
 			children = (
@@ -110,16 +156,10 @@
 			children = (
 				64F16B4B1A9C41CE002EA849 /* AppDelegate.h */,
 				64F16B4C1A9C41CE002EA849 /* AppDelegate.m */,
-				64F16B4E1A9C41CE002EA849 /* ViewController.h */,
-				64F16B4F1A9C41CE002EA849 /* ViewController.m */,
-				643027D61A9C510C00A91250 /* FirstViewController.h */,
-				643027D71A9C510C00A91250 /* FirstViewController.m */,
-				643027D91A9C511D00A91250 /* SecondViewController.h */,
-				643027DA1A9C511D00A91250 /* SecondViewController.m */,
-				64F16B6D1A9C445A002EA849 /* SpikeDrawerController.h */,
-				64F16B6E1A9C445A002EA849 /* SpikeDrawerController.m */,
-				643027DC1A9C55F500A91250 /* SideTableViewController.h */,
-				643027DD1A9C55F500A91250 /* SideTableViewController.m */,
+				6430281D1A9C6FC900A91250 /* Root */,
+				6430281C1A9C6FBD00A91250 /* Drawer */,
+				643028191A9C6F9000A91250 /* First */,
+				6430281A1A9C6F9C00A91250 /* Second */,
 				64F16B511A9C41CE002EA849 /* Main.storyboard */,
 				64F16B541A9C41CE002EA849 /* Images.xcassets */,
 				64F16B561A9C41CE002EA849 /* LaunchScreen.xib */,
@@ -299,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				643027DB1A9C511D00A91250 /* SecondViewController.m in Sources */,
-				64F16B501A9C41CE002EA849 /* ViewController.m in Sources */,
+				64F16B501A9C41CE002EA849 /* RootViewController.m in Sources */,
 				64F16B4D1A9C41CE002EA849 /* AppDelegate.m in Sources */,
 				643027D81A9C510C00A91250 /* FirstViewController.m in Sources */,
 				64F16B4A1A9C41CE002EA849 /* main.m in Sources */,
