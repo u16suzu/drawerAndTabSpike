@@ -10,7 +10,7 @@
 #import <UIViewController+MMDrawerController.h>
 
 @interface SideTableViewController ()
-@property (nonatomic) int currentIndex;
+@property (nonatomic) NSInteger currentIndex;
 @end
 
 @implementation SideTableViewController
@@ -37,14 +37,16 @@
         [self.mm_drawerController closeDrawerAnimated:YES completion:nil];
         return;
     }
+
     
-    UIViewController *centerViewController;
+    // どの大学のスレッドを出すかをココでセットする必要がある｡
+    UIViewController *centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FIRST_NAVIGATION"];
     switch (indexPath.row) {
         case 0:
-            centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FIRST_NAVIGATION"];
+            // TODO: ここでプロパティセット
             break;
         case 1:
-            centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SECOND_NAVIGATION"];
+            // TODO: ココでプロパティセット
             break;
         default:
             break;
