@@ -58,7 +58,7 @@
     }
 
     
-    // どの大学のスレッドを出すかをココでセットする必要がある｡
+    // どのスレッドを出すかをココでセットする必要がある｡
     UIViewController *centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TAB_BAR_CONTROLLER"];
     switch (indexPath.row) {
         case 0:
