@@ -25,24 +25,6 @@
 }
 
 
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"DRAWER_SEGUE"]) {
-        MMDrawerController *destinationViewController = (MMDrawerController *) segue.destinationViewController;
-        
-        // Instantitate and set the center view controller.
-        UIViewController *centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TAB_BAR_CONTROLLER"];
-        [destinationViewController setCenterViewController:centerViewController];
-        
-        // Instantiate and set the left drawer controller.
-        UIViewController *leftDrawerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SIDE"];
-        [destinationViewController setLeftDrawerViewController:leftDrawerViewController];
-        
-    }
-}
-
-
-
 #pragma mark -
 
 - (void)didReceiveMemoryWarning {
