@@ -109,7 +109,7 @@
         <!--Side Table View Controller-->
         <scene sceneID="qxc-c2-qV3">
             <objects>
-                <tableViewController storyboardIdentifier="SIDE_DRAWER_CONTROLLER" id="RnF-01-Qvu" customClass="SideTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SIDE" id="RnF-01-Qvu" customClass="SideTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="37" sectionHeaderHeight="22" sectionFooterHeight="22" id="qAk-TY-XO2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

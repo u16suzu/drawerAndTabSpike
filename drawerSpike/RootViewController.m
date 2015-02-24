@@ -39,7 +39,7 @@
         [destinationViewController setCenterViewController:centerViewController];
         
         // Instantiate and set the left drawer controller.
-        UIViewController *leftDrawerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SIDE_DRAWER_CONTROLLER"];
+        UIViewController *leftDrawerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SIDE"];
         [destinationViewController setLeftDrawerViewController:leftDrawerViewController];
         
     }
