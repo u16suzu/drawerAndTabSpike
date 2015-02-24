@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.openDrawerGestureModeMask  = MMOpenDrawerGestureModeAll;    
+    self.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+    
 }
 
 - (void)didReceiveMemoryWarning {
