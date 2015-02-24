@@ -109,7 +109,19 @@
                     <view key="view" contentMode="scaleToFill" id="aFF-tP-yAK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="second" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4e-Bu-Gbz">
+                                <rect key="frame" x="241" y="284" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="l4e-Bu-Gbz" secondAttribute="centerX" id="EEv-cw-jAg"/>
+                            <constraint firstAttribute="centerY" secondItem="l4e-Bu-Gbz" secondAttribute="centerY" id="JFy-Ir-ab6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jYg-8T-pPg"/>
                 </viewController>
@@ -128,7 +140,19 @@
                     <view key="view" contentMode="scaleToFill" id="3zi-E0-ckW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="first" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ8-rL-zy4">
+                                <rect key="frame" x="279" y="232" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="pJ8-rL-zy4" secondAttribute="centerY" id="AXP-lD-brZ"/>
+                            <constraint firstAttribute="centerX" secondItem="pJ8-rL-zy4" secondAttribute="centerX" id="x14-uE-cVf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fyB-Az-IlZ"/>
                 </viewController>
