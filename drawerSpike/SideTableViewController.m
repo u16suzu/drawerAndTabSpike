@@ -59,7 +59,7 @@
 
     
     // どの大学のスレッドを出すかをココでセットする必要がある｡
-    UIViewController *centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FIRST_NAVIGATION"];
+    UIViewController *centerViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TAB_BAR_CONTROLLER"];
     switch (indexPath.row) {
         case 0:
             // TODO: ここでプロパティセット
